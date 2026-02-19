@@ -64,22 +64,39 @@ java-dsa-journey
 ├── Introduction ✅
 
 ├── Arrays 
+
 ├── Strings
+
 ├── Hashing
+
 ├── SlidingWindow
+
 ├── BinarySearch
+
 ├── LinkedList
+
 ├── Stack
+
 ├── Queue
+
 ├── Trees
+
 ├── Graphs
+
 ├── DynamicProgramming
+
 │
+
 ├── InterviewPatterns
+
 │   ├── SlidingWindow.md
+
 │   ├── BinarySearchTemplate.md
+
 │   ├── DPFramework.md
+
 │
+
 └── README.md
 
 Each directory represents a focused attack on a core algorithmic domain.
