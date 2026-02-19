@@ -1,0 +1,22 @@
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Mac system files
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Build directories
+out/
+target/
+
+# Temporary files
+*.swp
