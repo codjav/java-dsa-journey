@@ -1,6 +1,6 @@
 package Introduction;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class TypeCasting {
     public static void main(String[] args) { 

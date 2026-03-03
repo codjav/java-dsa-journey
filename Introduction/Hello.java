@@ -7,5 +7,6 @@ public class Hello {
         Scanner sc = new Scanner(System.in);
 
         System.out.println(sc.next());
+        sc.close();
     }
 }
