@@ -2,7 +2,8 @@ package Strings.Question;
 
 public class Palin {
     public static void main(String[] args) {
-        String str = "9jaaj9";
+        String str = "a.b.c.d";
+        str.
         boolean a = Pal(str);
         System.out.println(a);
     }
