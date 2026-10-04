@@ -2,11 +2,9 @@ package OOPS.Wrapper.SingeltonClass;
 
 public class Main {
     public static void main(String[] args) {
-        Singleton obj1 = Singleton.getInstance("javed");
-        Singleton obj2 = Singleton.getInstance("Imran");
-
-        System.out.println(obj1.name);
-        System.out.println(obj2.name);
+        Singleton num1 = Singleton.getInstance();
+        Singleton num2 = Singleton.getInstance();
+        Singleton num3 = Singleton.getInstance();
+        Singleton num4 = Singleton.getInstance();
     }
 }
-

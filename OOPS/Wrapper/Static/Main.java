@@ -2,25 +2,36 @@ package OOPS.Wrapper.Static;
 
 public class Main {
     public static void main(String[] args) {
-        Human Javed = new Human("Javed", 21, true, 100);
-        Human Imran = new Human("Imanr", 22, true, 100);
-        Human.population +=10;
-        System.out.println(Human.population);
-        System.out.println(Human.population);
+        Human javed = new Human(22, "javed", 40000, false);
+        Human imran = new Human(23, "imran", 40000, false);
 
-        // Accessing greeting through object obj-
-        Main obj = new Main();
-        obj.greeting();
+        System.out.println(javed.name);
+        System.out.println(Human.population);
+        System.out.println(javed.population);
+        Human.message();
+
+        // greeting();
     }
 
-    // Fun is a static function we can't call non-static function inside it-
+    //* */ Static -
+    // Belongs to Class, Can be directly accessed, Can't access non-static inside static
+
+
+    //* */ Non-Static -
+    // Belongs to Object, Needs to initialize objects before accessing, Can access static inside non-static
+
     static void fun() {
-        System.out.println("hello! I, am static function");
-    }
+        Main obj = new Main();
+        obj.greeting(); // We can access it because it is accessed using its obj object
 
-    // Greeting is a non-static function and can't be accessed from static funciton because it belongs to object So it can only be accessed through an object, But static function can be called inside a non-static function-
+        greeting(); // We can't use it because it requires a instance/Object
+    }
+    // Something which is not static belongs to a object -
     void greeting() {
-        fun();
-        System.out.println("Hello! my name is md javed ali");
+        System.out.println("Hello!");
+    }
+    void some() {
+        greeting(); //Can access non-static inside non-static without creating a object for it.
+        fun(); //Can access static inside non static.
     }
 }

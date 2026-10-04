@@ -20,7 +20,9 @@ public class Main {
         Kunal.changeName("wemakedevs");
         Kunal.getName();
 
-        Student imran = new Student(Kunal);
+        final Student imran = new Student(Kunal);
+        // We can't do this -
+        // imran = new Student(javed);
         imran.getName();
     }
 
@@ -51,12 +53,17 @@ class Student {
     //     this.marks = 90.9f;
     // }
     Student() {
-        this (1, 89.90f, "imran");
+        this(4, 89f, "imran");
     }
 
     Student(int rno, float marks, String name) {
         this.name = name;
         this.rno = rno;
         this.marks = marks;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Object is destroyed.");
     }
 }

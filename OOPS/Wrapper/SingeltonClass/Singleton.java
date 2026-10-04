@@ -1,17 +1,14 @@
 package OOPS.Wrapper.SingeltonClass;
 
 public class Singleton {
-    String name;
-
-    private Singleton(String name) {
-        this.name = name;
+    private Singleton() {
+        
     }
-
     private static Singleton instance;
 
-    public static Singleton getInstance(String name) {
-        if(instance==null) {
-            instance = new Singleton(name);
+    public static Singleton getInstance() {
+        if(instance == null) {
+            instance = new Singleton();
         }
         return instance;
     }

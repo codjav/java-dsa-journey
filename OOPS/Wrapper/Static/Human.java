@@ -1,17 +1,23 @@
 package OOPS.Wrapper.Static;
 
 public class Human {
-    String name;
     int age;
-    boolean married;
+    String name;
     int salary;
+    boolean married;
     static long population;
 
-    public Human(String name, int age, boolean married, int salary) {
-        this.name = name;
+    static void message() {
+        System.out.println("Hello");
+    }
+
+    public Human(int age, String name, int salary, boolean married) {
         this.age = age;
-        this.married = married;
+        this.name = name;
         this.salary = salary;
+        this.married = married;
         Human.population += 1;
+
+        Human.message();
     }
 }
