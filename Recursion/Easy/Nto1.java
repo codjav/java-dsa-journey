@@ -1,4 +1,4 @@
-package Recursion.Easy.Question;
+package Recursion.Easy;
 
 public class Nto1 {
     public static void main(String[] args) {

@@ -11,6 +11,6 @@ public class Main {
         BoxWeight box4 = new BoxWeight(1,2,3,4);
         System.out.println(box4.h+" "+box4.w+" "+box4.l+" "+box4.weight);
 
-        box3.greeting();
+        Box.greeting();
     }
 }
